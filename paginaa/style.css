@@ -1,0 +1,87 @@
+/* Fundo da página */
+body {
+    background-image: url('https://i.pinimg.com/736x/aa/a2/73/aaa2733c561e6ed0098f918ceddfdc33.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #fff; /* Para garantir que o texto tenha uma boa visibilidade no fundo */
+}
+
+/* Container central */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo do grupo (quadrado preto) */
+.group {
+    text-align: center;
+    max-width: 90%;
+    width: 350px;
+    background-color: #000; /* Fundo preto */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagem redonda */
+.group-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.group-image:hover {
+    transform: scale(1.1);
+}
+
+/* Nome do grupo */
+.group-name {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Descrição do grupo */
+.group-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Botão de entrar */
+.btn-join {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-join:hover {
+    background-color: #006fa3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .group {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .group-image {
+        width: 100px;
+        height: 100px;
+    }
+}
